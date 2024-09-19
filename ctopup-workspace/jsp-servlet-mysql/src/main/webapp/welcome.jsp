@@ -4,13 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Welcome</title>
 </head>
 <body>
 	<%
-	String name = (String) request.getParameter("response");
+	String name = (String) session.getAttribute("response");
 	%>
+	<h3>
+		Welcome :<%=name%>
+	</h3>
 
-	<%=name%>
 </body>
 </html>
